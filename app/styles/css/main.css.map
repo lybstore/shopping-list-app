@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAO,CACN,KAAK,CAAC,IAAI,CCDX,IAAK,CACJ,OAAO,CAAE,CAAC",
+"sources": ["../sass/_colors.scss","../sass/_grid.scss"],
+"names": [],
+"file": "main.css"
+}
