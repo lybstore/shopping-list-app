@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 					loadPath: ['node_modules/foundation-sites/scss']
 				},
 				files: {
-					'app/styles/css/main.css' : 'app/styles/sass/main.scss'
+					'app/styles/css/main.css': 'app/styles/sass/main.scss'
 				}
 			}
 		},
