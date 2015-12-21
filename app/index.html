@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping app</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="styles/css/main.css">
 	
 	<!-- FONT AWESOME -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -14,8 +13,22 @@
 	<body>
 		<main>
 			<nav>
-				<a href="#" class="logo"></a>
-				<i></i>
+				<a href="#" class="logo">logo</a>
+				<i class="fa fa-search"></i>
+				<div class="hidden-menu">
+					<div class="hidden-menu-inner">
+						<h2>Search</h2>
+						<form action="#" method="post">
+							<fieldset>
+								<legend>Search</legend>
+								<input type="search" placeholder="search" id="search-field">
+								<button class="submit-btn">
+									<i class="fa fa-search"></i>
+								</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
 		  	</nav>
 		</main>
 		
