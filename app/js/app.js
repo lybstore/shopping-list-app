@@ -5,28 +5,17 @@ $(document).ready(function() {
 	})
 
 
-	
 	// CHARACTER LIMIT CHECK
-	$('#items-fields').keypress(function(e){
-
-		if(e.which == 13) {
-
-			if($(this).val().length > 3) {
-				$('.list-items:first').clone().appendTo("#items").addClass('isVisible');
-				$('#items-fields').val('');
-			} else {
-				alert('enter a valued item')
-			}
-		}
+	$('#add-btn').on('click',function(){
+		$('.list-items:first').clone().appendTo("#items").addClass('isVisible');
+		$('#items-fields').val('');
 	})
 
 	// RESET BUTTON 
-
-	var eleClone = $('list-items').clone(true);
-
 	$('.reset').on('click', function(){
-		$('.list-items').replaceWith(eleClone.clone(true));
-		//alert('working');
+		if( $('.list-items').length != 1);
+		$('.list-items:last').remove();
+		event.preventDefault();
 	})
 
 });
