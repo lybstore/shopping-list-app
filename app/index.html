@@ -11,19 +11,21 @@
 
 		<body>
 			<main>
-				<nav>
+				<nav style="padding: 1.5em;">
 					<a href="#" class="logo"></a>
-				
+					<i id="search" class="fa fa-search">CLICK ME</i>
+										<i class="fa fa-dot-circle-o reset" style="float: right;">Reset List</i>
+
 					<!-- IS HIDDEN MENU STARTS HERE -->
 					<div class="hidden-menu">
 						<div class="hidden-menu-inner">
-							<h2>Add items</h2>
 							<form>
 								<fieldset>
 									<legend>Add item</legend>
-									<input type="text" placeholder="Add items" id="items-fields">
-									<a id="add-btn">Add btn</a>
-									<i class="fa fa-dot-circle-o reset">Reset</i>
+									<input type="text" placeholder="enter item" id="items-field">
+									<button type="submit" class="add-item">click me to add item</button>
+
+									<i class="fa fa-dot-circle-o reset">Reset List</i>
 								</fieldset>
 							</form>
 						</div>
@@ -34,7 +36,7 @@
 				
 				<section id="items">
 					<div class="list-items">
-						<p>this is an item</p>
+						<p></p>
 						<a id="add" class="fa fa-plus"></a>						
 						<a id="remove" class="fa fa-times"></a>
 						<a id="checked" class="fa fa-check"></a>

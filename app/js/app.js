@@ -3,20 +3,26 @@ $(document).ready(function() {
 	$('#search').on('click', function(){
 		$('.hidden-menu').toggleClass('isVisible');
 	})
-
-	// CAPHCA STORE ITEM NAMES
 	
-
-	// CHARACTER LIMIT CHECK
-	$('.add-item').click(function(){
-		$('.list-items:first').clone().appendTo("#items").addClass('isVisible');
-		$('#items-fields').val('');
-	})
+	// TEXT FIELD INPUT CHECK
+	$('.add-item').on('click', function(e) {
+	     event.preventDefault();
+	     var value = $('#items-field').val();
+	     if (value!="") {
+			 var c = $('.list-items:first').clone();
+			 c.find("input").val("");  // find all inputs and clear
+			 c.appendTo("#items").addClass('isVisible');
+			 c.find("p").text(value);
+			 $('input').val("");
+		  }
+	});	
 
 	// RESET BUTTON 
 	$('.reset').on('click', function(){
-		if($('.list-items').length > 1) {
+		if($('.list-items').length > 1) { // greater that one item delete
 			$('.list-items:last').remove();
 		}
 	})
 });
+
+
