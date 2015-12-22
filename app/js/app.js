@@ -5,12 +5,12 @@ $(document).ready(function() {
 	})
 	
 	// TEXT FIELD INPUT CHECK
-	$('.add-item').on('click', function(e) {
+	$('.add-item').on('click', function() {
 	     event.preventDefault();
 	     var value = $('#items-field').val();
 	     if (value!="") {
 			 var c = $('.list-items:first').clone();
-			 c.find("input").val("");  // find all inputs and clear
+			 //c.find("input").val("");  // find all inputs and clear
 			 c.appendTo("#items").addClass('isVisible');
 			 c.find("p").text(value);
 			 $('input').val("");
