@@ -10,7 +10,7 @@ $(document).ready(function() {
 	     var value = $('#items-field').val();
 	     if (value!="") {
 			 var c = $('.list-items:first').clone();
-			 c.appendTo(".hidden-menu-inner").addClass('isVisible');
+			 c.appendTo(".hidden-menu-inner #items").addClass('isVisible');
 			 c.find("p").text(value);
 			 $('input').val("");
 		  }

@@ -4,40 +4,59 @@
 	<meta charset="UTF-8">
 	<title>Shopping app</title>
 	<link rel="stylesheet" href="styles/css/main.css">
+	<link rel="stylesheet" href="styles/css/foundation.css">
 	
 	<!-- FONT AWESOME -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	
+
 </head>
 
 		<body>
 			<main>
-				<nav>
-					<a href="#" class="logo"></a>
+				<div class="active-btn">
 					<a id="search" class="fa fa-2x fa-bars widget-active"></a>
-					<!--<i class="fa fa-dot-circle-o reset">Reset List</i>-->
-			  	</nav>
+					<div class="menu-triangle"></div>
+			  	</div>
 				
 				
 				<section id="items">
 					<!-- IS HIDDEN MENU STARTS HERE -->
 					<div class="hidden-menu">
 						<div class="hidden-menu-inner">
-							<form>
-								<fieldset>
-									<legend>Add item</legend>
-									<input type="text" placeholder="enter item" id="items-field">
-									<button type="submit" class="add-item">click me to add item</button>
 
-									<i class="fa fa-dot-circle-o reset">Reset List</i>
-								</fieldset>
-							</form>
+							
+								<form>
+									<h1>Add Items To Your Wish List</h1>
+									<fieldset>
+											<input type="text" placeholder="Enter Item" id="items-field" class="search-field">
+											<button type="submit" class="add-item">Add Item</button>
+										
+
+										<!--<i class="fa fa-dot-circle-o reset">Reset List</i>-->
+									</fieldset>
+								</form>
+							
 							
 							<div id="items">
 							<div class="list-items">
-								<p></p>
-								<a id="add" class="fa fa-plus"></a>						
-								<a id="remove" class="fa fa-times"></a>
-								<a id="checked" class="fa fa-check"></a>
+
+								<div class="left-align">
+									<i class="fa fa-shopping-cart"></i>
+								</div>
+
+								<div class="item-title">
+									<p></p>
+									
+										<a id="add" class="fa fa-plus"></a>				
+										<a id="remove" class="fa fa-times"></a>
+										<a id="checked" class="fa fa-check"></a>
+									
+								</div>
+
+
+								
 							</div>
 							</div>
 
