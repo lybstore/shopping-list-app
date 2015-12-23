@@ -10,8 +10,7 @@ $(document).ready(function() {
 	     var value = $('#items-field').val();
 	     if (value!="") {
 			 var c = $('.list-items:first').clone();
-			 //c.find("input").val("");  // find all inputs and clear
-			 c.appendTo("#items").addClass('isVisible');
+			 c.appendTo(".hidden-menu-inner").addClass('isVisible');
 			 c.find("p").text(value);
 			 $('input').val("");
 		  }
