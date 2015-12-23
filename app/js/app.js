@@ -1,21 +1,27 @@
 $(document).ready(function() {
 
-	$('#search').click(function(){
+	$('#search').on('click', function(){
 		$('.hidden-menu').toggleClass('isVisible');
 	})
-
-
-	// CHARACTER LIMIT CHECK
-	$('#add-btn').on('click',function(){
-		$('.list-items:first').clone().appendTo("#items").addClass('isVisible');
-		$('#items-fields').val('');
-	})
+	
+	// TEXT FIELD INPUT CHECK
+	$('.add-item').on('click', function() {
+	     event.preventDefault();
+	     var value = $('#items-field').val();
+	     if (value!="") {
+			 var c = $('.list-items:first').clone();
+			 c.appendTo(".hidden-menu-inner").addClass('isVisible');
+			 c.find("p").text(value);
+			 $('input').val("");
+		  }
+	});	
 
 	// RESET BUTTON 
 	$('.reset').on('click', function(){
-		if( $('.list-items').length != 1);
-		$('.list-items:last').remove();
-		event.preventDefault();
+		if($('.list-items').length > 1) { // greater that one item delete
+			$('.list-items:last').remove();
+		}
 	})
-
 });
+
+

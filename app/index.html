@@ -13,34 +13,38 @@
 			<main>
 				<nav>
 					<a href="#" class="logo"></a>
-					<i id="search" class="fa fa-search">search</i>
-					<i class="fa fa-dot-circle-o reset">Reset</i>
-
-					<!-- IS HIDDEN MENU STARTS HERE -->
-					<div class="hidden-menu">
-						<div class="hidden-menu-inner">
-							<h2>Add items</h2>
-							<form>
-								<fieldset>
-									<legend>Add item</legend>
-									<input type="text" placeholder="Add items" id="items-fields">
-									<a id="add-btn">Add btn</a>
-									<i class="fa fa-dot-circle-o reset">Reset</i>
-								</fieldset>
-							</form>
-						</div>
-					</div>
-					<!-- IS HIDDEN ENDS HERE -->
+					<a id="search" class="fa fa-2x fa-bars widget-active"></a>
+					<!--<i class="fa fa-dot-circle-o reset">Reset List</i>-->
 			  	</nav>
 				
 				
 				<section id="items">
-					<div class="list-items">
-						<p>this is an item</p>
-						<a id="add" class="fa fa-plus"></a>						
-						<a id="remove" class="fa fa-times"></a>
-						<a id="checked" class="fa fa-check"></a>
+					<!-- IS HIDDEN MENU STARTS HERE -->
+					<div class="hidden-menu">
+						<div class="hidden-menu-inner">
+							<form>
+								<fieldset>
+									<legend>Add item</legend>
+									<input type="text" placeholder="enter item" id="items-field">
+									<button type="submit" class="add-item">click me to add item</button>
+
+									<i class="fa fa-dot-circle-o reset">Reset List</i>
+								</fieldset>
+							</form>
+							
+							<div id="items">
+							<div class="list-items">
+								<p></p>
+								<a id="add" class="fa fa-plus"></a>						
+								<a id="remove" class="fa fa-times"></a>
+								<a id="checked" class="fa fa-check"></a>
+							</div>
+							</div>
+
+						</div>
 					</div>
+					<!-- IS HIDDEN ENDS HERE -->
+					
 				</section>
 
 			</main>

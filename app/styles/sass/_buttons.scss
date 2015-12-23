@@ -1,0 +1,10 @@
+.widget-active {
+	color: #666;
+	cursor: pointer;
+	transition: all 0.2s ease;
+
+	&:hover {
+		text-decoration: none;
+		color: #999;
+	}
+}
