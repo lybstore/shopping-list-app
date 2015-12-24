@@ -1,12 +1,14 @@
-.hidden-menu,
+
 .list-items {
-	//visibility: hidden;
+	visibility: hidden;
+	display: none;
 }
 
 // JQUERY CLASSES 
 
 .isVisible{
 	visibility: visible;
+	display: inline-block;
 }
 
 .menu-triangle {
@@ -32,7 +34,7 @@
 	
 	.hidden-menu {
 		border: 1px solid #f4f4f4;
-		padding-bottom: 2.5em;
+		padding-bottom: 2em;
 		background-color: #f4f4f4;
 		box-shadow: 0 2px 10px rgba(0,0,0,.2);
 
@@ -41,7 +43,7 @@
 		fieldset {
 			font-family: 'Lato', helvetica, sans-serif;
 			border: none;
-			padding: 1em;
+			padding: 0.5em;
 			margin: 0;
 		}
 
@@ -57,7 +59,7 @@
 		}
 
 		.search-field { 
-			width: 74.9%;
+			width: 77.9%;
 			border: 1px solid #f4f4f4;
 			border-bottom: 2px solid #f4f4f4;
 			padding: 0.18em;
@@ -108,7 +110,7 @@
 			margin: 0;
 			padding: 0.29em;
 			color: #525252;
-			border-radius: 3px;
+			//border-radius: 3px;
 
 			&:hover,
 			&:focus {
@@ -123,30 +125,48 @@
 		.list-items {
 			border-top: 1px solid #f4f4f4;
 			border-bottom: 1px solid #f4f4f4;
-			padding: 0;
+			padding: 0.5em 0.5em 0;
 			font-family: 'Lato', helvetica, sans-serif;
-			display: inline-block;
+			//display: inline-block;
 			width: 100%;
+			position: relative;
 
 			.left-align {
 				float: left;
-				padding: 0.8em 0.7em;
+				padding: .4em 0.7em;
 				background-color: #000;
 				margin-right: 0.5em;
+				//margin-top: 0.5em;
+				border-radius: 100px;
 
 				i { color: #fff; }
 			}
 
 			.item-title {
 				display: inline-block;
+				width: 85%;
+
+				.remove-btn {
+					position: absolute;
+					top: 1em;
+					right: 0.7em;
+					color: #000;
+				}
 			}
 
 
-			p {
+			.product-title {
 				text-align: left;
+				font-size: 1em;
+				float: left;
+				width: 94%;
+			}
+
+			p { 
+				font-size: 0.8em;
+				color: #999;
 				padding-bottom: 0;
 				margin-bottom: 0;
-				font-size: 1em;
 			}
 
 			&:nth-child(even) {

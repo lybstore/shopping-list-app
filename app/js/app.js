@@ -11,7 +11,7 @@ $(document).ready(function() {
 	     if (value!="") {
 			 var c = $('.list-items:first').clone();
 			 c.appendTo(".hidden-menu-inner #items").addClass('isVisible');
-			 c.find("p").text(value);
+			 c.find(".product-title").text(value);
 			 $('input').val("");
 		  }
 	});	
