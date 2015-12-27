@@ -2237,11 +2237,15 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .hidden-menu .list-items .left-align i { color: #fff; }
 .hidden-menu .list-items .item-title { display: inline-block; }
 .hidden-menu .list-items .item-title ul { position: absolute; top: 0em; right: 0em; }
-.hidden-menu .list-items .item-title ul li { font-size: 0.9em; display: inline; list-style: none; padding: 0 0.2em; }
-.hidden-menu .list-items .item-title ul li a { color: #666; }
+.hidden-menu .list-items .item-title ul li { font-size: 0.9em; display: inline; list-style: none; padding: 0 0.5em; }
+.hidden-menu .list-items .item-title ul li a { color: #666; padding-right: 0.2em; }
 .hidden-menu .list-items .item-title ul li a:hover { text-decoration: none; color: #999; }
 .hidden-menu .list-items .product-title { text-align: left; font-size: 1em; float: left; width: 94%; margin-bottom: 0; }
 .hidden-menu .list-items p { font-size: 0.8em; color: #999; padding-bottom: 0; margin-bottom: 0; }
 .hidden-menu .list-items:nth-child(even) { background-color: #F7F7F7; }
+
+.alertify { border: transparent !important; }
+
+.alertify-logs { width: 287px !important; margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
