@@ -2208,7 +2208,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .black { color: #000; }
 
-main { margin: 2em auto; width: 360px; }
+.main { margin: 2em auto; width: 360px; }
 
 .list-items { display: none; }
 
