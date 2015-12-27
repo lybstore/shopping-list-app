@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
 	
-
 	// TEXT FIELD INPUT CHECK
 	$('.add-item').on('click', function() {
 	     event.preventDefault();
@@ -21,7 +20,6 @@ $(document).ready(function() {
 		  	alertify.error("You have reached you limited");
 		  }
 	});	
-
 
 	// ITEM REMOVE FUNCTION
 	$('#items').on('click', '.reset', function(){
