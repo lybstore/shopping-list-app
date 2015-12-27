@@ -29,18 +29,19 @@
 							
 								<form>
 									<h1>Add Items To Your Wish List</h1>
+
 									<fieldset>
 											<input type="text" placeholder="Enter Item" id="items-field" class="search-field">
 											<button type="submit" class="add-item">Add Item</button>
 										
-
 										<!--<i class="fa fa-dot-circle-o reset">Reset List</i>-->
 									</fieldset>
 								</form>
 							
 							
-							<div id="items">
-							<div class="list-items">
+							<ul id="items">
+
+							<li class="list-items">
 
 								<div class="left-align">
 									<i class="fa fa-shopping-cart"></i>
@@ -49,14 +50,17 @@
 								<div class="item-title">
 									<h3 class="product-title"></h3>
 									<p>ipsum quia dolor sit amet, consectetur</p>
-									<a id="remove" class="fa fa-times remove-btn"></a>
+									<a class="fa fa-times reset">close</a>
+									
 								</div>
-
-								<a id="add" class="fa fa-plus"></a>				
-								<a id="checked" class="fa fa-check"></a>
 								
-							</div>
-							</div>
+								<footer>
+									<a id="add" class="fa fa-plus"></a>				
+									<a id="checked" class="fa fa-check"></a>
+								</footer>
+								
+							</li>
+							</ul>
 
 						</div>
 					</div>

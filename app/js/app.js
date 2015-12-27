@@ -3,6 +3,8 @@ $(document).ready(function() {
 	$('#search').on('click', function(){
 		$('.hidden-menu').toggleClass('isVisible');
 	})
+
+	
 	
 	// TEXT FIELD INPUT CHECK
 	$('.add-item').on('click', function() {
@@ -17,11 +19,24 @@ $(document).ready(function() {
 	});	
 
 	// RESET BUTTON 
-	$('.reset').on('click', function(){
-		if($('.list-items').length > 1) { // greater that one item delete
-			$('.list-items:last').remove();
+
+	//$('#reset').on('click', function(){
+	//	event.preventDefault();
+	//	if($('.list-items').length > 1) { // greater that one item delete
+	//	   $('.list-items:last').remove();
+	//		alert('working');
+	//	}
+	//})
+
+	$('ul').on('click', '.reset', function(){
+		event.preventDefault();
+		if($('li').length > 1) {
+			$('li:last').remove();
+			alert('working');
 		}
+		
 	})
+ 
 });
 
 

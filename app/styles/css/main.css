@@ -2208,11 +2208,11 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .black { color: #000; }
 
-.list-items { visibility: hidden; display: none; }
+.list-items { display: none; }
 
-.isVisible { visibility: visible; display: inline-block; }
+.isVisible { display: block; }
 
-.menu-triangle { width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #f4f4f4; position: absolute; left: 47%; top: 30px; }
+.menu-triangle { width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #f4f4f4; position: absolute; left: 47%; top: 29px; }
 
 #items { position: relative; max-width: 350px; margin-top: 0.5em; }
 
@@ -2230,11 +2230,11 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .hidden-menu input:-webkit-autofill:focus { -webkit-box-shadow: 0 0 0 50px white inset !important; }
 .hidden-menu button { background-color: transparent; font-family: 'Lato', helvetica, sans-serif; font-size: 0.9em; border: 1px solid #525252; transition: all 0.2s ease; margin: 0; padding: 0.29em; color: #525252; }
 .hidden-menu button:hover, .hidden-menu button:focus { background-color: #000; color: #fff; border: 1px solid #000; outline: none; }
-.hidden-menu .list-items { border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; padding: 0.5em 0.5em 0; font-family: 'Lato', helvetica, sans-serif; width: 100%; position: relative; }
-.hidden-menu .list-items .left-align { float: left; padding: .4em 0.7em; background-color: #000; margin-right: 0.5em; border-radius: 100px; }
+.hidden-menu .list-items { border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; padding: 0.5em 0.5em 0; font-family: 'Lato', helvetica, sans-serif; width: 100%; position: relative; z-index: 999; }
+.hidden-menu .list-items .left-align { padding: .4em 0.7em; background-color: #000; margin-right: 0.5em; margin-top: 0.5em; border-radius: 100px; }
 .hidden-menu .list-items .left-align i { color: #fff; }
-.hidden-menu .list-items .item-title { display: inline-block; width: 85%; }
-.hidden-menu .list-items .item-title .remove-btn { position: absolute; top: 1em; right: 0.7em; color: #000; }
+.hidden-menu .list-items .item-title { display: inline-block; }
+.hidden-menu .list-items .item-title .remove-btn { top: 1em; right: 0.7em; color: #000; }
 .hidden-menu .list-items .product-title { text-align: left; font-size: 1em; float: left; width: 94%; }
 .hidden-menu .list-items p { font-size: 0.8em; color: #999; padding-bottom: 0; margin-bottom: 0; }
 .hidden-menu .list-items:nth-child(even) { background-color: #F7F7F7; }

@@ -1,14 +1,15 @@
 
+
+
 .list-items {
-	visibility: hidden;
+	//visibility: hidden;
 	display: none;
 }
 
 // JQUERY CLASSES 
 
 .isVisible{
-	visibility: visible;
-	display: inline-block;
+	display: block;
 }
 
 .menu-triangle {
@@ -19,7 +20,7 @@
 	border-bottom: 10px solid #f4f4f4;
 	position: absolute;
 	left: 47%;
-	top: 30px;
+	top: 29px;
 }
 
 
@@ -130,13 +131,14 @@
 			//display: inline-block;
 			width: 100%;
 			position: relative;
+			z-index: 999;
 
 			.left-align {
-				float: left;
+				//float: left;
 				padding: .4em 0.7em;
 				background-color: #000;
 				margin-right: 0.5em;
-				//margin-top: 0.5em;
+				margin-top: 0.5em;
 				border-radius: 100px;
 
 				i { color: #fff; }
@@ -144,10 +146,10 @@
 
 			.item-title {
 				display: inline-block;
-				width: 85%;
+				//width: 85%;
 
 				.remove-btn {
-					position: absolute;
+					//position: absolute;
 					top: 1em;
 					right: 0.7em;
 					color: #000;
@@ -158,6 +160,7 @@
 			.product-title {
 				text-align: left;
 				font-size: 1em;
+				//display: none;
 				float: left;
 				width: 94%;
 			}
