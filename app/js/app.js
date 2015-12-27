@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	     // SET VERIABLES 
 	     var value = $('#items-field').val();
-	     var limit = 12;
+	     var limit = 10;
 	     var c = $('.list-items:first').clone();
 
 	     // CONDITIONAL STATEMENT
