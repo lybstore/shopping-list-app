@@ -163,11 +163,12 @@
 					font-size: 0.9em;
 					display: inline;
 					list-style: none;
-					padding: 0 0.2em;
+					padding: 0 0.5em;
 				}
 
 				ul li a {
 					color: #666;
+					padding-right: 0.2em;
 
 					&:hover {
 						text-decoration: none;
@@ -199,5 +200,16 @@
 		}
 
 
+	}
+
+	// POP UP NOTIFICATIONS 
+
+	.alertify {
+		border: transparent !important;
+	}
+
+	.alertify-logs {
+		width: 287px !important;
+		margin: 0 auto;
 	}
 

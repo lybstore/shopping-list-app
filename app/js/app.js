@@ -5,12 +5,20 @@ $(document).ready(function() {
 	// TEXT FIELD INPUT CHECK
 	$('.add-item').on('click', function() {
 	     event.preventDefault();
+
+	     // SET VERIABLES 
 	     var value = $('#items-field').val();
-	     if (value!="") {
-			 var c = $('.list-items:first').clone();
+	     var limit = 12;
+	     var c = $('.list-items:first').clone();
+
+	     // CONDITIONAL STATEMENT
+	     if (value!="" && $("ul").length < limit) {
 			 c.appendTo(".hidden-menu-inner #items").addClass('isVisible');
 			 c.find(".product-title").text(value);
 			 $('input').val("");
+			 alertify.success("Item Added");
+		  } else {
+		  	alertify.error("You have reached you limited");
 		  }
 	});	
 
@@ -22,13 +30,8 @@ $(document).ready(function() {
 			$('.list-items:last').remove();
 			//alert('working');
 		}
+		alertify.error("Item Removed");
 	})
-
-	//ADD NOTIFICATION 
-	//$('ul').on('click', '.add', function(){
-	//	event.preventDefault();
-
-	//})
  
 });
 
